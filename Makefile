@@ -1,5 +1,6 @@
+TAGS=latest
+NAME=qnib/mongodb
 
-mongodb: terminal
-	DTAG=latest
-	GBRANCH=master
-	cd ~/docker/docker-$@; $(DBUILD) qnib/$@:$(DTAG) .
+include ~/src/github.com/ChristianKniep/QNIBTerminal/docker.mk
+
+all: build
