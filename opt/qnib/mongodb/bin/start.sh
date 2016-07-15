@@ -1,4 +1,4 @@
-#!/usr/loca/bin/dumb-init /bin/bash
+#!/usr/local/bin/dumb-init /bin/bash
 
 cd /var/lib/mongodb/
 mongod --rest
