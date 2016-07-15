@@ -1,5 +1,5 @@
 ###### QNIBTerminal child
-FROM qnib/terminal
+FROM qnib/consul
 
 RUN dnf install -y mongodb-server mongodb && \
     mkdir -p /data/db/
