@@ -2,7 +2,7 @@
 FROM qnib/d-syslog
 
 ENV MONGODB_DIR=/data/db/
-RUN apt-get install -y mongodb-server mongodb
+RUN apt-get install -y mongodb-server mongodb nmap
 VOLUME ["/data/db/"]
 ADD etc/supervisord.d/*.ini /etc/supervisord.d/
 ADD etc/consul.d/mongodb.json /etc/consul.d/
