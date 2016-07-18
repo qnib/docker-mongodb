@@ -1,5 +1,5 @@
 ###### QNIBTerminal child
-FROM qnib/d-syslog
+FROM qnib/u-syslog
 
 ENV MONGODB_DIR=/data/db/
 RUN apt-get install -y mongodb-server mongodb nmap
